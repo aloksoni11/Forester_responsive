@@ -1,0 +1,77 @@
+.menu {
+    font: 10px/1 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
+
+.background-img {
+    background-image: url(../images/bg-1.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+
+    padding-top: 200px;
+    height: 100%;
+    width: 100%;
+}
+
+.pr5 {
+    padding-right: 5%;
+}
+
+.pl5 {
+    padding-left: 5%;
+}
+
+.white {
+    color: white;
+}
+
+.hero-subheading {
+    font: 500 10px/1 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.h1-lg {
+    font: 400 130px/1 'Peace Sans';
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    /*    font-family: 'Righteous', cursive;*/
+
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.h5-md {
+    font: 200 18px/1.65em 'Nunito Sans', sans-serif;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.btn-hero {
+    background-color: rgba(190, 208, 148, 0.8);
+    letter-spacing: 1.5px;
+    color: #fff;
+    font-weight: 500;
+    transition: all .2;
+    padding: 17px 37px 17px 37px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.btn-hero {
+    background-color: rgba(190, 208, 148, 0.4);
+    color: #fff !important;
+}
