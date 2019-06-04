@@ -14,17 +14,24 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="fonts/PeaceSans/stylesheet.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link rel="stylesheet" href="css/lightgallery.css">
     <title> The Forester-Creative Multi Propose Template </title>
 </head>
 
 <body>
-    <nav class="navbar position-fixed w-100">
+    <div class="shriker bg-light w-100 m-0 p-0 position-fixed py-3 px-4">
+        <div class="bar-logo"> <img src="images/logo-dark.png" alt=""> </div>
+        <button class="Bar-menu"><i class="fas fa-bars"></i></button>
+    </div>
+    <nav class="navbar position-fixed w-100" id="navbar">
         <div class="container ">
-            <div class="row  w-100 py-3 ">
+            <div class="row  w-100 py-2 menu-ui">
                 <div class="col-md-5">
-                    <ul class="p-0 menu">
+                    <ul class="p-0 menu" id="menu1">
                         <li class="d-inline px-1 ">HOME</li>
-                        <li class="d-inline px-1 "> <a href="#" class="dropdown-toggle">SERVICES</a> </li>
+                        <li class="d-inline px-1 "> <a href="#" class="dropdown-toggle menu-a " data-toggle="dropdown">SERVICES</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">Web Design</a> <a class="dropdown-item" href="#">Photography</a> <a class="dropdown-item" href="#">Branding</a> </div>
+                        </li>
                         <li class="d-inline px-1 ">GALLERY</li>
                         <li class="d-inline px-1 ">TEAM</li>
                         <li class="d-inline px-1 ">CONTACT</li>
@@ -35,13 +42,11 @@
                     <div class="brand-logo"> <img src="images/logo-dark.png" alt=""> </div>
                 </div>
                 <div class="col-md-5">
-                    <ul class="p-0 menu">
-                        <li class="d-inline px-1 ">HOME</li>
-                        <li class="d-inline px-1 ">SERVICES</li>
-                        <li class="d-inline px-1 ">GALLERY</li>
-                        <li class="d-inline px-1 ">TEAM</li>
-                        <li class="d-inline px-1 ">CONTACT</li>
-                        <li class="d-inline px-1 ">BLOG</li>
+                    <ul class="p-0 menu text-right" id="Menu2">
+                        <li class="d-inline px-1 "><a href="#" class="menu-a "><i class="fab fa-instagram"></i>INSTAGRAM</a></li>
+                        <li class="d-inline px-1 "><a href="#" class="menu-a"><i class="fab fa-facebook-f"></i>FACEBOOK</a></li>
+                        <li class="d-inline px-1 "><a href="#" class="menu-a"><i class="fab fa-twitter"></i>TWITTER</a></li>
+                        <li class="d-inline px-1 "><a href="#" class="menu-a"><i class="fab fa-vimeo-v"></i>VIMEO</a></li>
                     </ul>
                 </div>
             </div>
@@ -72,7 +77,7 @@
             <h5>OUR EXPERTISE </h5>
             <h2 class="h2-md">Services </h2>
             <div class="row py-5">
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4 col-md-6 col-12  py-2">
                     <div class="card">
                         <div class="card-image bgC1 ">
                             <div class="fontaw"> <i class="fas fa-swatchbook"></i></div>
@@ -85,8 +90,8 @@
                         <div class="card-link pb-4"> <a href="#" class="card-a">... DISCOVER MORE</a> </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="card">
+                <div class="col-lg-4 col-md-6 col-12  py-2">
+                    <div class="card ">
                         <div class="card-image bgC1">
                             <div class="fontaw"><i class="fas fa-camera-retro"></i> </div>
                         </div>
@@ -98,7 +103,7 @@
                         <div class="card-link pb-4"> <a href="#" class="card-a">... DISCOVER MORE</a> </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4 col-md-6 col-12  py-2 mx-md-auto">
                     <div class="card">
                         <div class="card-image bgC1">
                             <div class="fontaw"> <i class="fas fa-fingerprint"></i> </div>
@@ -118,7 +123,7 @@
         </div>
     </section>
     <section class="container-fluid pt-5">
-        <div class="row text-center no-gutters pt-5">
+        <div class="row pt-5 text-center">
             <div class="col-12 py-4">
                 <div class="section-heading">
                     <h2 class="gellery-title">Gallery</h2>
@@ -134,62 +139,85 @@
                     <li class="d-inline px-3 port-menu">PHOTO</li>
                 </ul>
             </div>
-            <div class="col-md-4 col-sm-6 col-12 position-relative p-2">
+        </div>
+        <div class="row text-center no-gutters " id="lightgallery">
+            <div class="col-md-4 col-sm-6 col-12 position-relative p-2 ">
                 <div class="item-caption">
                     <div class="item-desc">
                         <div class="desc-title">
-                            <h3 class="h3-md">Logo Design</h3></div>
+                            <h3 class="h3-md">Logo Design</h3> </div>
                         <div class="caption-btn">
                             <h5 class="subheading">DESIGN</h5> </div>
                     </div>
-                </div> <img src="images/1.jpg" class="w-100" alt=""> </div>
+                </div>
+                <a href="images/1.jpg"> <img src="images/1.jpg" class="w-100" alt=""></a>
+            </div>
             <div class="col-md-4 col-sm-6 col-12 position-relative p-2">
                 <div class="item-caption">
                     <div class="item-desc">
                         <div class="desc-title">
-                            <h3 class="h3-md">Happy Face</h3></div>
+                            <h3 class="h3-md">Happy Face</h3> </div>
                         <div class="caption-btn">
                             <h5 class="subheading">PHOTO</h5> </div>
                     </div>
-                </div> <img src="images/2.jpg" class="w-100" alt=""> </div>
+                </div>
+                <a href="images/2.jpg"> <img src="images/2.jpg" class="w-100" alt=""></a>
+            </div>
             <div class="col-md-4 col-sm-6 col-12 position-relative p-2">
                 <div class="item-caption">
                     <div class="item-desc">
                         <div class="desc-title">
-                            <h3 class="h3-md">Can</h3></div>
+                            <h3 class="h3-md">Can</h3> </div>
                         <div class="caption-btn">
                             <h5 class="subheading">BRANDING</h5> </div>
                     </div>
-                </div> <img src="images/3.jpg" class="w-100" alt=""> </div>
+                </div>
+                <a href="images/3.jpg"> <img src="images/3.jpg" class="w-100" alt=""></a>
+            </div>
             <div class="col-md-4 col-sm-6 col-12 position-relative p-2">
                 <div class="item-caption">
                     <div class="item-desc">
                         <div class="desc-title">
-                            <h3 class="h3-md">Leaves</h3></div>
+                            <h3 class="h3-md">Leaves</h3> </div>
                         <div class="caption-btn">
                             <h5 class="subheading">VIDEO</h5> </div>
                     </div>
-                </div> <img src="images/4.jpg" class="w-100" alt=""> </div>
+                </div>
+                <a href="images/4.jpg"> <img src="images/4.jpg" class="w-100" alt=""></a>
+            </div>
             <div class="col-md-4 col-sm-6 col-12 position-relative p-2">
                 <div class="item-caption">
                     <div class="item-desc">
                         <div class="desc-title">
-                            <h3 class="h3-md">Label</h3></div>
+                            <h3 class="h3-md">Label</h3> </div>
                         <div class="caption-btn">
                             <h5 class="subheading">BRANDING</h5> </div>
                     </div>
-                </div> <img src="images/5.jpg" class="w-100" alt=""> </div>
+                </div>
+                <a href="images/5.jpg"> <img src="images/5.jpg" class="w-100" alt=""> </a>
+            </div>
             <div class="col-md-4 col-sm-6 col-12 position-relative p-2">
                 <div class="item-caption">
                     <div class="item-desc">
                         <div class="desc-title">
-                            <h3 class="h3-md">Mockup</h3></div>
+                            <h3 class="h3-md">Mockup</h3> </div>
                         <div class="caption-btn">
                             <h5 class="subheading">PHOTO</h5> </div>
                     </div>
-                </div> <img src="images/6.jpg" class="w-100" alt=""> </div>
+                </div>
+                <a href="images/6.jpg"> <img src="images/6.jpg" class="w-100" /></a>
+            </div>
         </div>
     </section>
+    <!-- jQuery version must be >= 1.8.0; -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+    <!-- lightgallery plugins -->
+    <script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/lg-fullscreen.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

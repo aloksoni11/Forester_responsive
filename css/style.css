@@ -6,12 +6,43 @@ body {
     padding: 0;
 }
 
+.shriker {
+    z-index: 5;
+    display: none;
+}
+
+.Bar-menu {
+    border: none;
+    background: transparent;
+}
+
+.Bar-menu .fas {
+    font-size: 20px;
+    color: black;
+    border: none !important;
+}
+
 .navbar {
     z-index: 11;
+    border-bottom: 1px solid #aeaeae;
+}
+
+.navview {
+    background-color: white;
 }
 
 * {
     box-sizing: border-box;
+}
+
+.bar-logo {
+    float: left;
+}
+
+.Bar-menu {
+    display: none;
+    float: right;
+    color: black;
 }
 
 .menu {
@@ -20,7 +51,13 @@ body {
     font-weight: 700;
     color: rgba(255, 255, 255, 1);
     z-index: 5;
-    /*    position: fixed;*/
+}
+
+.menu .fab {
+    font-size: 12px;
+    padding-right: 5px;
+    border-right: 1px solid #fff;
+    margin-right: 5px;
 }
 
 .background-img {
@@ -99,6 +136,10 @@ h5 {
     font: 600 10px/1 'Montserrat', sans-serif;
     letter-spacing: 1px;
     color: rgba(0, 0, 0, 0.85)
+}
+
+.menu-a {
+    text-decoration: none !important;
 }
 
 a {
@@ -190,7 +231,7 @@ a:hover {
     transition-duration: .2s;
 }
 
-i {
+.fontaw i {
     font-size: 50px;
     color: white;
 }
@@ -253,7 +294,7 @@ i {
 
 .item-caption {
     height: 100%;
-    width: 100%;
+    width: 97%;
     background-color: transparent;
     position: absolute;
     z-index: 2;
@@ -279,4 +320,19 @@ i {
     color: rgba(0, 0, 0, .85);
     margin: 0;
     padding: 0;
+}
+
+@media only screen and (max-width:768px) {
+    .menu-ui {
+        display: none;
+    }
+    .Bar-menu {
+        display: block;
+    }
+    .h1-lg {
+        font: 400 40px/1 'Peace Sans';
+    }
+    .shriker {
+        display: block;
+    }
 }
