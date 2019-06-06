@@ -293,8 +293,8 @@ a:hover {
 }
 
 .item-caption {
-    height: 100%;
-    width: 97%;
+    height: 96%;
+    width: 96.5%;
     background-color: transparent;
     position: absolute;
     z-index: 2;
@@ -320,6 +320,30 @@ a:hover {
     color: rgba(0, 0, 0, .85);
     margin: 0;
     padding: 0;
+}
+
+.icon {
+    width: 20%;
+}
+
+.icon i {
+    font-size: 70px;
+}
+
+.icon i:hover {
+    color: #aeaeae;
+}
+
+.icon-desc {
+    width: 70%;
+    float: right
+}
+
+.icon-desc p {
+    font: 400 14px/1.6em 'Nunito Sans', sans-serif;
+    color: #000;
+    line-height: 22.4px;
+    font-weight: 400;
 }
 
 @media only screen and (max-width:768px) {
