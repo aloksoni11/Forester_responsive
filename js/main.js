@@ -23,3 +23,20 @@ function myFunction() {
 $(document).ready(function () {
     $("#lightgallery").lightGallery();
 });
+
+$(window).scroll(startCounter);
+function startCounter() {
+    if ($(window).scrollTop() > 3500) {
+        $(window).off("scroll", startCounter);
+        $('.count').each(function () {
+            var $this = $(this);
+            jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+                duration: 2000,
+                easing: 'swing',
+                step: function () {
+                    $this.text(Math.ceil(this.Counter));
+                }
+            });
+        });
+    }
+}
