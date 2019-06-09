@@ -472,10 +472,12 @@ a:hover {
 .contact-icon-desc p {
     font: 400 14px/1 'Montserrat', sans-serif;
 }
-.display-5{
+
+.display-5 {
     font: 600 45px/1.2em 'Montserrat';
     letter-spacing: -1px;
 }
+
 @media only screen and (max-width:1023px) {
     .navbar {
         display: none;
@@ -494,6 +496,29 @@ a:hover {
         width: 100%;
         padding: 10px;
     }
+}
+
+
+/*
+.form-group{
+    border: none !important;
+}
+*/
+
+.form-control {
+    border: none !important;
+    background-color: #f2f4ec;
+}
+
+.form-control:focus {
+    background-color: #f2f4ec;
+    border: none !important;
+}
+
+.form-group .btn:hover {
+    background-color: #f2f4ec;
+    color: black;
+    border: 1px solid #f2f4ec;
 }
 
 @media only screen and (min-width:769px)and (max-width:1240px) {
