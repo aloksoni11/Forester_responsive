@@ -69,7 +69,6 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
 }
 
 .hero-content {
@@ -373,7 +372,6 @@ a:hover {
     transition-duration: .5s;
     transition-timing-function: ease-out;
     transform: translate3d(12px, 0px, 0px);
-
 }
 
 .t-desc p {
@@ -419,7 +417,6 @@ a:hover {
 
 .review h5 {
     letter-spacing: 3px;
-
 }
 
 .review-text {
@@ -451,47 +448,59 @@ a:hover {
     background-color: #f2f4ec;
 }
 
+.getintouch li {
+    list-style: none;
+    display: table;
+    margin: 20px 0px 20px 0px;
+}
 
-.tabe i {
+.contact-icon {
+    width: 45px;
+    float: left;
+    border-right: 1px solid rgba(0, 0, 0, .12);
+}
+
+.contact-icon i {
     font-size: 30px;
-    padding: 20px;
 }
 
-
-
-.tabe p {
-    font: 400 12px/1 'Montserrat', sans-serif;
-    color: rgba(0, 0, 0, .85);
+.contact-icon-desc {
+    float: left;
+    padding-left: 10px;
 }
 
-.line {
-    height: 50px;
-    width: 5px;
-    background-color: red;
-    border: 1px solid red;
-/*    margin-bottom: 50px;*/
+.contact-icon-desc p {
+    font: 400 14px/1 'Montserrat', sans-serif;
 }
-
-@media only screen and (max-width:768px) {
+.display-5{
+    font: 600 45px/1.2em 'Montserrat';
+    letter-spacing: -1px;
+}
+@media only screen and (max-width:1023px) {
     .navbar {
         display: none;
     }
-
     .Bar-menu {
         display: block;
     }
-
     .h1-lg {
         font: 400 40px/1 'Peace Sans';
     }
-
     .shriker {
         display: block;
     }
-
     .team {
         height: 100%;
         width: 100%;
         padding: 10px;
+    }
+}
+
+@media only screen and (min-width:769px)and (max-width:1240px) {
+    .h1-lg {
+        font: 500 80px/1 'Peace Sans';
+    }
+    #Menu2 li {
+        padding: 0px !important;
     }
 }
