@@ -24,7 +24,7 @@ body {
 
 .navbar {
     z-index: 11;
-    border-bottom: 1px solid #aeaeae;
+    border-bottom: 1px solid rgba(0, 0, 0, .07);
 }
 
 .navview {
@@ -478,6 +478,56 @@ a:hover {
     letter-spacing: -1px;
 }
 
+.form-control {
+    border: none !important;
+    background-color: #f2f4ec;
+}
+
+.form-control:focus {
+    background-color: #f2f4ec;
+    border: none !important;
+}
+
+.form-group .btn:hover {
+    background-color: #f2f4ec;
+    color: black;
+    border: 1px solid #f2f4ec;
+}
+
+.owl-item img:hover {
+    opacity: 0.5;
+}
+
+.ul-h {
+    display: table;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 1.2rem;
+}
+
+.ul-h li {
+    display: table-cell;
+    font: 500 10px/1 'Montserrat', sans-serif;
+    padding-right: 20px;
+}
+
+.ul-h li i {
+    padding-right: 10px;
+    font-size: 14px;
+}
+.ul-h a
+{
+    text-decoration: none;    
+}
+.ul-h span {
+    font: 400 14px/1.6em 'Nunito Sans', sans-serif;
+}
+
+.f-desc {
+    font: 400 14px/1.6em 'Nunito Sans', sans-serif;
+    color: white;
+}
+
 @media only screen and (max-width:1023px) {
     .navbar {
         display: none;
@@ -496,29 +546,13 @@ a:hover {
         width: 100%;
         padding: 10px;
     }
-}
-
-
-/*
-.form-group{
-    border: none !important;
-}
-*/
-
-.form-control {
-    border: none !important;
-    background-color: #f2f4ec;
-}
-
-.form-control:focus {
-    background-color: #f2f4ec;
-    border: none !important;
-}
-
-.form-group .btn:hover {
-    background-color: #f2f4ec;
-    color: black;
-    border: 1px solid #f2f4ec;
+    .ul-h {
+        display: block;
+    }
+    .ul-h li {
+        display: block;
+        padding: 10px;
+    }
 }
 
 @media only screen and (min-width:769px)and (max-width:1240px) {
